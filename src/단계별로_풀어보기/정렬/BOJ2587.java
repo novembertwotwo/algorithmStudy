@@ -1,4 +1,4 @@
-package 정렬;
+package 단계별로_풀어보기.정렬;
 
 import java.io.BufferedReader;
 import java.io.IOException;
