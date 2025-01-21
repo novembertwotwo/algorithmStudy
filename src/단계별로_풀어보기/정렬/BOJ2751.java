@@ -4,22 +4,19 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.Collections;
 
 
-public class BOJ2587 {
+public class BOJ2751 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int[] array = new int[5];
-        int sum = 0;
-        for (int i = 0; i < 5; i++) {
-            int num = Integer.parseInt(br.readLine());
-            array[i] = num;
-            sum += num;
-        }
-        Arrays.sort(array);
         StringBuilder result = new StringBuilder();
-        result.append(sum / 5).append("\n");
-        result.append(array[2]);
+        int N = Integer.parseInt(br.readLine());
+        int[] array = new int[N];
+        for (int i = 0; i < N; i++) {
+            array[i] = Integer.parseInt(br.readLine());
+        }
+        Arrays.stream(array).forEach(o -> result.append(o).append("\n"));
         System.out.println(result);
     }
 }

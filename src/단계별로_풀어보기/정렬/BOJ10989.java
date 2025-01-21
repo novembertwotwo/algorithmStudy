@@ -5,21 +5,19 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-
-public class BOJ2587 {
+public class BOJ10989 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int[] array = new int[5];
-        int sum = 0;
-        for (int i = 0; i < 5; i++) {
-            int num = Integer.parseInt(br.readLine());
-            array[i] = num;
-            sum += num;
+        StringBuilder result = new StringBuilder();
+        int N = Integer.parseInt(br.readLine());
+        int[] array = new int[N];
+        for (int i = 0; i < N; i++) {
+            array[i] = Integer.parseInt(br.readLine());
         }
         Arrays.sort(array);
-        StringBuilder result = new StringBuilder();
-        result.append(sum / 5).append("\n");
-        result.append(array[2]);
+        for (int i : array) {
+            result.append(i).append("\n");
+        }
         System.out.println(result);
     }
 }

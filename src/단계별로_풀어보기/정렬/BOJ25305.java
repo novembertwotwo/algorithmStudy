@@ -17,7 +17,7 @@ public class BOJ25305 {
         Integer[] array = new Integer[N];
         st = new StringTokenizer(br.readLine());
         int index = 0;
-        while(st.hasMoreTokens()){
+        while (st.hasMoreTokens()) {
             array[index] = Integer.valueOf(st.nextToken());
             index += 1;
         }
