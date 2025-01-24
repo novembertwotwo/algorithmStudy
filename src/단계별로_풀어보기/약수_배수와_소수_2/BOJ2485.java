@@ -13,7 +13,7 @@ public class BOJ2485 {
             int now = Integer.parseInt(br.readLine());
             array[i] = now;
         }
-        int minValue = 10000000;
+        int minValue = 1000000000;
         int[] array2 = new int[N - 1];
         for (int i = 0; i < N - 1; i++) {
             int interval = array[i + 1] - array[i];
@@ -40,7 +40,6 @@ public class BOJ2485 {
             result += ((i / minInterval) - 1);
         }
         System.out.println(result);
-
     }
 }
 
