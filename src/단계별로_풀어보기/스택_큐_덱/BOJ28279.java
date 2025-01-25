@@ -11,6 +11,7 @@ public class BOJ28279 {
         StringBuilder result = new StringBuilder();
         int N = Integer.parseInt(br.readLine());
         Deque<Integer> deque = new ArrayDeque<>();
+
         for (int i = 0; i < N; i++) {
             StringTokenizer stringTokenizer = new StringTokenizer(br.readLine());
             int a = Integer.parseInt(stringTokenizer.nextToken());
